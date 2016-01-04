@@ -1,0 +1,9 @@
+service_id,date,exception_type
+01-Weekday,20141225,2
+01-Sunday,20141225,1
+01-Weekday,20141226,2
+01-Saturday,20141226,1
+01-Weekday,20150101,2
+01-Sunday,20150101,1
+01-Weekday,20150216,2
+01-Sunday,20150216,1

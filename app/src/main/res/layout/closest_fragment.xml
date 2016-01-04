@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/find_button"
+        android:text="Find"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Closest stops within"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/find_button"
+        android:layout_toEndOf="@id/find_button"
+        android:id="@+id/find_text"
+        android:paddingTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="@android:color/black"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/find_text"
+        android:layout_toEndOf="@id/find_text"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="m"
+        android:layout_toRightOf="@id/search_box"
+        android:layout_toEndOf="@id/search_box"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:paddingTop="5dp"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_result_list"
+        android:layout_below="@id/search_box"
+        >
+
+    </FrameLayout>
+
+</RelativeLayout>

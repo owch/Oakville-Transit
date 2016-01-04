@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bowenowen.oakvilletransit"
+    android:versionCode="2"
+    android:versionName="2.0.1" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bus"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".RoutesActivity" />
+        <activity android:name=".StopInfoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bowenowen.oakvilletransit.HomeActivity" />
+        </activity>
+        <activity android:name=".SearchActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bowenowen.oakvilletransit.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ClosestActivity"
+            android:label="@string/title_activity_gps" >
+        </activity>
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="myapp.permission.MAPS_RECEIVE"/>
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+        <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    </application>
+</manifest>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="95dp"
+    android:background="@drawable/row"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+
+    <ImageView
+        android:id="@+id/stop_image"
+        android:src="@drawable/stop"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:focusable = "false"
+        android:focusableInTouchMode = "false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/stop_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/remove_fav_button"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:id="@+id/stop_logo_num"
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="2"
+        android:text="3"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:focusable = "false"
+        android:focusableInTouchMode = "false"
+        android:layout_toLeftOf="@+id/stop_title"
+        android:layout_toStartOf="@+id/stop_title"
+        android:layout_below="@+id/stop_image"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/stop_title"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="10dp"
+        android:minLines="2"
+        android:paddingTop="5dp"
+        android:text="Title"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:focusable = "false"
+        android:focusableInTouchMode = "false"
+        android:layout_toLeftOf="@+id/remove_fav_button"
+        android:layout_above="@+id/decription" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/remove_fav_button"
+        android:src="@drawable/cross"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#00ffffff"
+        android:focusable = "false"
+        android:focusableInTouchMode = "false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next bus"
+        android:textColor="@android:color/black"
+        android:id="@+id/decription"
+        android:layout_toLeftOf="@+id/remove_fav_button"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/stop_image"
+        android:layout_toRightOf="@+id/thumbImage"
+        android:layout_toEndOf="@+id/thumbImage" />
+
+    <TextView
+        android:id="@+id/thumbImage"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/stop_image"
+        android:layout_below="@+id/stop_image"
+        android:background="@drawable/bus"
+        android:focusable = "false"
+        android:focusableInTouchMode = "false"
+        android:textStyle="bold"
+        android:text="1"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="3dp"/>
+
+</RelativeLayout>
