@@ -1,5 +1,4 @@
-This is the source code for the Oakville Transit app available at 
-https://play.google.com/store/apps/details?id=bowenowen.oakvilletransit
+This is the source code for the Oakville Transit app
 
 This app stores the bus schedule for Oakville Transit.
 
