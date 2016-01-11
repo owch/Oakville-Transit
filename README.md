@@ -1,3 +1,7 @@
+#Oakville Transit
+
+*****************The schedules are currently very outdated****************
+
 This is the source code for the Oakville Transit app
 
 This app stores the bus schedule for Oakville Transit.
